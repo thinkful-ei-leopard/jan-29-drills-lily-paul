@@ -1,7 +1,7 @@
 import React from 'react';
-import TheDate from './state/TheDate.js';
-import Counter from './state/Counter.js';
-import Tabs from './state/Tabs.js';
+// import TheDate from './state/TheDate.js';
+// import Counter from './state/Counter.js';
+// import Tabs from './state/Tabs.js';
 
 const tabsProp = [
   { name: 'First tab',
@@ -15,9 +15,6 @@ const tabsProp = [
 function App() {
   return (
     <main className="App">
-      {/* <TheDate /> */}
-      {/* <Counter count={123} number={5} /> */}
-      <Tabs tabs={tabsProp} />
     </main>
   );
 }
