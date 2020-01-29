@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sections Component only opens one section at a time 1`] = `
+<div>
+  <ul>
+    <li>
+      <button
+        key="0"
+        onClick={[Function]}
+      >
+        Section 1
+      </button>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <button
+        key="1"
+        onClick={[Function]}
+      >
+        Section 2
+      </button>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <button
+        key="2"
+        onClick={[Function]}
+      >
+        Section 3
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Sections Component opens any clicked section 1`] = `
+<div>
+  <ul>
+    <li>
+      <button
+        key="0"
+        onClick={[Function]}
+      >
+        Section 1
+      </button>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <button
+        key="1"
+        onClick={[Function]}
+      >
+        Section 2
+      </button>
+      <p>
+        Cupiditate tenetur aliquam necessitatibus id distinctio quas nihil ipsam nisi modi!
+      </p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <button
+        key="2"
+        onClick={[Function]}
+      >
+        Section 3
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Sections Component renders empty given no tabs 1`] = `
+<div>
+  <ul>
+    <li>
+      <button
+        key="0"
+        onClick={[Function]}
+      />
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Sections Component renders no section active by default 1`] = `
+<div>
+  <ul>
+    <li>
+      <button
+        key="0"
+        onClick={[Function]}
+      >
+        Section 1
+      </button>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <button
+        key="1"
+        onClick={[Function]}
+      >
+        Section 2
+      </button>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <button
+        key="2"
+        onClick={[Function]}
+      >
+        Section 3
+      </button>
+    </li>
+  </ul>
+</div>
+`;
