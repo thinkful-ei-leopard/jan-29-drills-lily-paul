@@ -1,9 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Sections Component only opens one section at a time 1`] = `
+exports[`Sections Component only opens last section when multiple sections clicked 1`] = `
 <div>
   <ul>
-    <li>
+    <li
+      key="0"
+    >
       <button
         key="0"
         onClick={[Function]}
@@ -11,9 +13,9 @@ exports[`Sections Component only opens one section at a time 1`] = `
         Section 1
       </button>
     </li>
-  </ul>
-  <ul>
-    <li>
+    <li
+      key="1"
+    >
       <button
         key="1"
         onClick={[Function]}
@@ -21,9 +23,9 @@ exports[`Sections Component only opens one section at a time 1`] = `
         Section 2
       </button>
     </li>
-  </ul>
-  <ul>
-    <li>
+    <li
+      key="2"
+    >
       <button
         key="2"
         onClick={[Function]}
@@ -35,10 +37,12 @@ exports[`Sections Component only opens one section at a time 1`] = `
 </div>
 `;
 
-exports[`Sections Component opens any clicked section 1`] = `
+exports[`Sections Component opens a clicked section 1`] = `
 <div>
   <ul>
-    <li>
+    <li
+      key="0"
+    >
       <button
         key="0"
         onClick={[Function]}
@@ -46,9 +50,9 @@ exports[`Sections Component opens any clicked section 1`] = `
         Section 1
       </button>
     </li>
-  </ul>
-  <ul>
-    <li>
+    <li
+      key="1"
+    >
       <button
         key="1"
         onClick={[Function]}
@@ -59,9 +63,9 @@ exports[`Sections Component opens any clicked section 1`] = `
         Cupiditate tenetur aliquam necessitatibus id distinctio quas nihil ipsam nisi modi!
       </p>
     </li>
-  </ul>
-  <ul>
-    <li>
+    <li
+      key="2"
+    >
       <button
         key="2"
         onClick={[Function]}
@@ -73,10 +77,12 @@ exports[`Sections Component opens any clicked section 1`] = `
 </div>
 `;
 
-exports[`Sections Component renders empty given no tabs 1`] = `
+exports[`Sections Component renders empty given no sections 1`] = `
 <div>
   <ul>
-    <li>
+    <li
+      key="0"
+    >
       <button
         key="0"
         onClick={[Function]}
@@ -89,7 +95,9 @@ exports[`Sections Component renders empty given no tabs 1`] = `
 exports[`Sections Component renders no section active by default 1`] = `
 <div>
   <ul>
-    <li>
+    <li
+      key="0"
+    >
       <button
         key="0"
         onClick={[Function]}
@@ -97,9 +105,9 @@ exports[`Sections Component renders no section active by default 1`] = `
         Section 1
       </button>
     </li>
-  </ul>
-  <ul>
-    <li>
+    <li
+      key="1"
+    >
       <button
         key="1"
         onClick={[Function]}
@@ -107,9 +115,9 @@ exports[`Sections Component renders no section active by default 1`] = `
         Section 2
       </button>
     </li>
-  </ul>
-  <ul>
-    <li>
+    <li
+      key="2"
+    >
       <button
         key="2"
         onClick={[Function]}

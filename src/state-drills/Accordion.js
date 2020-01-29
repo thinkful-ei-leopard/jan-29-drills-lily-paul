@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Accordion.css';
 
 class Accordion extends React.Component {
   static defaultProps = { sections: [{ title: '', content: '' }] };
@@ -18,19 +19,24 @@ class Accordion extends React.Component {
   renderSection = () => {
     const currentSection = this.props.sections[this.state.currentSectionIndex];
     return this.props.sections.map((section, index) => (
-      <ul>
-        <li>
-          <button key={index} onClick={() => this.handleButtonClick(index)}>
-            {section.title}
-          </button>
-          {this.state.showingContent && this.state.currentSectionIndex === index && <p>{currentSection.content}</p>}
-        </li>
-      </ul>
+      <li key={index}>
+        <button key={index} onClick={() => this.handleButtonClick(index)}>
+          {section.title}
+        </button>
+        {this.state.showingContent &&
+          this.state.currentSectionIndex === index && (
+            <p className="contentText">{currentSection.content}</p>
+          )}
+      </li>
     ));
   };
 
   render() {
-    return <div>{this.renderSection()}</div>;
+    return (
+      <div>
+        <ul>{this.renderSection()}</ul>
+      </div>
+    );
   }
 }
 
